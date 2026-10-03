@@ -1,0 +1,42 @@
+---
+import {Phone} from "lucide-react"
+---
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-zinc-950/95 border-b border-zinc-800 shadow-xl transition-all">
+    <div class="max-w-7xl px-3 sm:px-6 mx-auto">
+        <div class="flex items-center justify-between h-18 sm:h-20">
+
+            <div class="flex items-center space-x-2.5 sm:space-x-3.5 group cursor-pointer">
+                <div class="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-sky-500 rounded-xl sm:rounded-2xl shadow-lg shadow-sky-500/20 overflow-hidden shrink-0 transition-transform group-hover:scale-105">
+                    <a href="/" class="absolute inset-0 flex items-center justify-center text-white font-black text-xl">
+                        L
+                    </a>
+                </div>
+                <div>
+                    <span class="text-base sm:text-xl font-bold tracking-tight text-white block leading-tight">
+                        Fabbro <span class="text-sky-400">Lissone</span>
+                    </span>
+                    <div class="flex items-center space-x-1 text-[11px] sm:text-xs text-zinc-300 font-light mt-0.5">
+                        <span class="truncate max-w-40 sm:max-w-none">Sostituzione, riparazione e pronto intervento</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex items-center space-x-3">
+                <a
+                        href="tel:3333102133"
+                        class="hidden sm:inline-flex group relative items-center space-x-3 bg-sky-500 hover:bg-sky-400 text-white px-5 py-3 rounded-2xl font-bold shadow-lg shadow-sky-500/30 active:scale-95 transition-all duration-200"
+                >
+                    <div class="p-1.5 bg-white/20 rounded-xl group-hover:rotate-12 transition-transform">
+                        <Phone size={20}/>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <span class="text-sm tracking-wide leading-tight">333 310 2133</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</header>
