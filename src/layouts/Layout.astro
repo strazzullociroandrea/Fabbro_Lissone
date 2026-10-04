@@ -1,3 +1,8 @@
+---
+import {GoToUp} from "../components/go-to-up.tsx";
+import CookieBanner from "../components/cookie-banner.tsx";
+import "../styles/global.css";
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,7 +12,9 @@
     <title>Fabbro Lissone | Sostituzione, riparazione e pronto intervento</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-zinc-950/95">
+<GoToUp client:load/>
+<CookieBanner client:load/>
 <slot/>
 </body>
 </html>

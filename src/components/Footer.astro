@@ -1,0 +1,112 @@
+---
+import {Phone, Mail, MapPin, ArrowUpRight} from 'lucide-react';
+---
+
+<footer class="w-full bg-zinc-950/95 text-white pt-20 pb-12 relative overflow-hidden border-t border-zinc-800">
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-zinc-800">
+
+            <div class="lg:col-span-5 flex flex-col space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-sky-500 rounded-xl sm:rounded-2xl shadow-lg shadow-sky-500/20 overflow-hidden shrink-0">
+                        <a href="/"
+                           class="absolute inset-0 flex items-center justify-center text-white font-black text-xl">
+                            L
+                        </a>
+                    </div>
+                    <span class="font-extrabold text-xl tracking-tight text-white uppercase">
+                        Fabbro <span class="text-sky-400">Lissone</span>
+                    </span>
+                </div>
+                <p class="text-zinc-400 text-sm leading-relaxed max-w-sm font-light">
+                    Apertura porte, sostituzione serrature di sicurezza e interventi rapidi su porte blindate a Lissone.
+                </p>
+                <div class="pt-2 flex flex-col space-y-2">
+                    <p class="text-xs text-zinc-400 leading-snug font-light">
+                        Fabbro Lissone è un marchio di proprietà di Luciano
+                    </p>
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-lg bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-300">
+                            P.IVA: 09082580961
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 flex flex-col space-y-4">
+                <h4 class="text-white font-extrabold uppercase text-xs tracking-wider">
+                    Note Legali
+                </h4>
+                <ul class="text-zinc-400 text-sm space-y-3 font-medium">
+                    <li>
+                        <a href="/cookie-policy"
+                           class="hover:text-white transition-colors flex items-center justify-between group py-1">
+                            <span>Cookie Policy</span>
+                            <ArrowUpRight
+                                    className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-sky-400"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy"
+                           class="hover:text-white transition-colors flex items-center justify-between group py-1">
+                            <span>Privacy Policy</span>
+                            <ArrowUpRight
+                                    className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-sky-400"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/terms-of-service"
+                           class="hover:text-white transition-colors flex items-center justify-between group py-1">
+                            <span>Termini e Condizioni</span>
+                            <ArrowUpRight
+                                    className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-sky-400"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col space-y-4">
+                <h4 class="text-white font-extrabold uppercase text-xs tracking-wider">
+                    Contatti & Sede
+                </h4>
+
+                <a class="text-sm hover:text-white transition-colors flex items-center gap-3 text-zinc-300 group font-medium"
+                   href="tel:3333102133">
+                    <div class="p-2.5 rounded-xl bg-zinc-900 text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-all shadow-sm border border-zinc-800">
+                        <Phone className="w-4 h-4 shrink-0"/>
+                    </div>
+                    <span>+39 333 310 2133</span>
+                </a>
+
+                <a class="text-sm hover:text-white transition-colors flex items-center gap-3 text-zinc-300 group font-medium break-all"
+                   href="mailto:info@lissoneserrature.it">
+                    <div class="p-2.5 rounded-xl bg-zinc-900 text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-all shadow-sm border border-zinc-800">
+                        <Mail className="w-4 h-4 shrink-0"/>
+                    </div>
+                    <span>info@lissoneserrature.it</span>
+                </a>
+
+                <div class="text-sm flex items-start gap-3 text-zinc-300">
+                    <div class="p-2.5 rounded-xl bg-zinc-900 text-sky-400 shrink-0 mt-0.5 shadow-sm border border-zinc-800">
+                        <MapPin className="w-4 h-4"/>
+                    </div>
+                    <span class="leading-relaxed pt-1 text-zinc-400 font-light">Sede legale: Via Gran Paradiso 4, Brugherio</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-8 text-center flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500 font-medium">
+            <p>
+                © {new Date().getFullYear()} Fabbro Lissone. Tutti i diritti riservati.
+            </p>
+            <p>
+                Developed by <a href="https://cirostrazzullo.it" target="_blank" rel="noopener noreferrer"
+                                class="text-zinc-300 hover:text-white transition-colors font-bold underline underline-offset-4 decoration-sky-500">cirostrazzullo.it</a>
+            </p>
+        </div>
+
+    </div>
+</footer>

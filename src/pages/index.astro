@@ -2,16 +2,22 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
-import "../styles/global.css";
+import Services from '../components/Services.astro';
+import Images from '../components/Images.astro';
+import ContactUs from "../components/ContactUs.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-    <header>
-        <Header/>
-
-    </header>
+    <Header/>
     <main id="main">
         <Hero/>
+        <Services/>
+        <Images/>
+        <ContactUs/>
     </main>
+    <footer>
+        <Footer/>
+    </footer>
 
 </Layout>
