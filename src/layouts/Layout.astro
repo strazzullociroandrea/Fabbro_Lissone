@@ -1,5 +1,6 @@
 ---
 import {GoToUp} from "../components/go-to-up.tsx";
+import CookieBanner from "../components/cookie-banner.tsx";
 ---
 <!doctype html>
 <html lang="en">
@@ -12,6 +13,7 @@ import {GoToUp} from "../components/go-to-up.tsx";
 </head>
 <body class="bg-zinc-950/95">
 <GoToUp client:load/>
+<CookieBanner client:load/>
 <slot/>
 </body>
 </html>
