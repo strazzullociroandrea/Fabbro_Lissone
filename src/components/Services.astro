@@ -5,31 +5,31 @@ const services = [
     {
         icon: DoorOpen,
         title: "Apertura Porte",
-        description: "Apertura di porte bloccate o con chiave spezzata senza danni alla struttura, tramite tecniche professionali.",
+        description: "Intervento per porte blindate bloccate, con chiave spezzata o difettosa, operando senza danneggiare la struttura.",
         badge: "01 / Servizio",
     },
     {
         icon: KeyRound,
         title: "Sostituzione Serrature",
-        description: "Installazione e aggiornamento a serrature di ultima generazione con cilindro europeo di massima sicurezza.",
+        description: "Sostituzione e conversione di vecchie serrature a doppia mappa con moderni cilindri europei di altissima sicurezza antieffrazione.",
         badge: "02 / Servizio",
     },
     {
         icon: Vault,
         title: "Apertura Casseforti",
-        description: "Servizio specializzato di sblocco e apertura casseforti con la massima riservatezza e competenza.",
+        description: "Sblocco professionale e riservato di casseforti a muro o a mobile in caso di smarrimento chiavi o blocco del meccanismo.",
         badge: "03 / Servizio",
     },
     {
         icon: Scale,
         title: "Sfratti giudiziari",
-        description: "Collaborazione puntuale e professionale con gli Enti e ufficiali giudiziari per aperture e cambi serratura.",
+        description: "Assistenza su incarico per cambi serratura e apertura forzata in collaborazione con gli organi competenti.",
         badge: "04 / Servizio",
     },
     {
         icon: Blinds,
         title: "Serrande e Tapparelle",
-        description: "Riparazione urgente, sblocco, manutenzione e motorizzazione di serrande commerciali e tapparelle domestiche.",
+        description: "Riparazione  di tapparelle domestiche e serrande commerciali bloccate.",
         badge: "05 / Servizio",
     },
 ];
@@ -60,11 +60,7 @@ const services = [
                         <div>
                             <div class="flex items-center justify-between mb-6">
 
-                                <span class={`text-xs font-semibold px-3 py-1 rounded-full border ${
-                                    service.highlight
-                                        ? 'bg-sky-500/20 text-sky-300 border-sky-500/30'
-                                        : 'bg-zinc-800 text-zinc-400 border-zinc-700/50'
-                                }`}>
+                                <span class={`uppercase text-xs font-semibold  text-sky-400`}>
                                 {service.badge}
 
                             </span>
