@@ -1,0 +1,56 @@
+---
+import {Phone, ShieldCheck, Clock, CheckCircle2, MapPin} from "lucide-react";
+---
+
+<section id="hero" class="relative w-full bg-zinc-950 py-16 sm:py-24 border-b border-zinc-800 overflow-hidden">
+     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-sky-500/10 blur-[120px] pointer-events-none rounded-full"></div>
+
+    <div class="relative mx-auto flex w-full max-w-7xl flex-col justify-center px-4 sm:px-6 lg:px-8">
+
+         <div class="mb-6 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 rounded-full bg-sky-500/10 px-4 py-1.5 text-xs font-semibold text-sky-400 shadow-sm sm:text-sm border border-sky-500/20">
+                <MapPin className="h-3.5 w-3.5"/>
+                <span>Lissone — Sostituzione, riparazione e pronto intervento</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+             <div class="md:col-span-7 text-center md:text-left flex flex-col justify-center">
+                <h1 class="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl leading-[1.1]">
+                    Fabbro <span class="text-sky-400 block sm:inline">Lissone</span>
+                </h1>
+
+                <p class="mx-auto mt-6 max-w-2xl text-base sm:text-lg font-normal leading-relaxed text-zinc-300 md:mx-0">
+                    Apertura porte, sostituzione serrature di sicurezza e interventi rapidi su porte blindate a Lissone.
+                </p>
+
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                    <a
+                            href="tel:3333102133"
+                            class="group inline-flex w-full sm:w-auto items-center justify-center space-x-3 rounded-2xl bg-sky-500 hover:bg-sky-400 px-8 py-4 text-base font-bold text-white shadow-lg shadow-sky-500/25 active:scale-95 transition-all duration-200 sm:text-lg"
+                    >
+                        <div class="p-1 bg-white/20 rounded-xl group-hover:rotate-12 transition-transform">
+                            <Phone className="h-5 w-5 text-white shrink-0"/>
+                        </div>
+                        <span>Chiama 333 310 2133</span>
+                    </a>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-zinc-800 grid grid-cols-2 gap-4 text-left">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 rounded-xl bg-zinc-900 text-sky-400 shrink-0 flex items-center justify-center border border-zinc-800">
+                            <Clock className="w-5 h-5"/>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-zinc-400 font-medium">Orari</span>
+                            <span class="text-sm font-bold text-white">Lun - Ven: 7:30 - 20:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
